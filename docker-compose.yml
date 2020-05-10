@@ -2,7 +2,7 @@ version: '3'
 
 services:
   webserver:
-    image: php:7.3-apache-stretch
+    build: ./bin/php/7.3
     ports:
       - ${WEBSERVER_HOST_PORT}:80
     volumes:
